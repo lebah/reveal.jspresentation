@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>POC Exercise Logi Analytics</title>
+		<meta name="author" content="Hermawan Purwanto">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<a href="https://www.logianalytics.com/">
+						<img src="https://www.logianalytics.com/wp-content/themes/logianalytics/assets/img/logo-dk.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+					<h3>POC Exercises</h3>
+					<p>
+						<small>Created by <a href="https://www.linkedin.com/in/hermawanpurwanto">Hermawan Purwanto</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h4>Tuesday, August 4 2020, 6 AM GMT+8</h4>
+					<br>
+					<ul>
+						<li>About Me</li>
+						<li>Nortwind Trader Company</li>
+						<li>Logi Info solution</li>
+						<li>Walk through</li>
+						<li>Conclusion</li>
+					</ul>					
+				</section>
+
+				<section>
+					<section>
+						<h4>Working Experiences (1/2)</h4>
+						<br>
+						<ul>							
+							<li class="fragment fade-in-then-semi-out">Companies: Software House, Outsource, Course / Training, Bank and Finance Vendor</li>
+							<li class="fragment fade-in-then-semi-out">Applications: Mining, Electrical & Construction Project Management, Distribution Companies, Content Management System, Finance / Leasing</li>
+							<li class="fragment fade-in-then-semi-out">Roles: Implementer, Help Desk, Programmer, System Analyst, Trainer, Business Analyst, Pre-Sales, Project Manager, Scrum mMaster, Senior Software Engineer</li>
+						</ul>											
+					</section>
+
+					<section>
+						<h4>Working Experiences (2/2)</h4>				<br>
+						<ul>
+							<li class="fragment fade-in-then-semi-out">
+								C#, SQL, ASP 3, VB 6, ASP 3, PHP, Java, HTML, CSS, Javascript, AngularJS
+							</li>
+							<li class="fragment fade-in-then-semi-out">
+								Web, Desktop, SPA, WPF, N-Tier, .Net Framework, NHibernate, MVC, MVVM, ETL
+							</li>
+							<li class="fragment fade-in-then-semi-out">
+								MS SQL Server, IIS, Windows, Oracle, MySQL, Apache
+							</li>							
+						</ul>
+					</section>
+
+					<section>
+						<h4>My career goals</h4>
+						<br>
+						<ul>
+							<li class="fragment fade-in-then-semi-out">
+								Familiar with products/services in Logi
+							</li>
+							<li class="fragment fade-in-then-semi-out">
+								Speed up and innovate on supporting those applications
+							</li>
+							<li class="fragment fade-in-then-semi-out">
+								Listen and learn to customer needs and experience
+							</li>
+							<li class="fragment fade-in-then-semi-out">
+								Improve quality, communication skills, leadership, knowledge in business intelligence, data science through  education programs outside of work
+							</li>
+							<li class="fragment fade-in-then-semi-out">
+								An opportunity to become a mentor for others like me within this field.
+							</li>
+						</ul>					
+					</section>
+
+					<section>
+						<h4>As an Application Support Engineer </h4>
+						<br>
+						<ul>
+							<li class="fragment fade-in-then-semi-out">
+								I have appropriate skills, knowledge and experiences needed
+							</li>
+							<li class="fragment fade-in-then-semi-out">
+								Worked for various projects, industries and customers with various roles
+							</li>
+							<li class="fragment fade-in-then-semi-out">
+								My experience make me more responsible, customer focus, good quality solution and analytical.
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h4>Nortwind Traders Company</h4>
+						<br>
+						<p class="fragment fade-left">
+							<span>Imports and exports food around the world
+							</span>
+							<span>They have system for input their transaction</span>
+							<span>Once the sales departement ask the developer for custom/flexible Reporting System that will help finding insights from their sales.</span>
+						</p>
+					</section>
+					
+				</section>
+
+				<section>
+					<h4>Sales Dashboard - POC</h4>
+					<br>
+					<ol class="fragment fade-down">
+						<li>Pie chart Sales by Category</li>
+						<li>Bar chart of overall Sales over Time</li>
+						<li>Sales  Goals for each Sales Person</li>
+					</ol>					
+				</section>
+
+				<section>
+					<section>
+						<h4>1. Pie chart Sales by Category</h4>
+						<br>
+						<P>Pie chart to display Sales by Category. Allow filtering on Year of Sales. Drill down to list details of Products sold for the Year, group by Ship Country.</P>
+					</section>
+
+					<section data-background-iframe="http://localhost/ex4/rdPage.aspx?rdReport=Default" data-background-interactive>
+						<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h4>1. Pie chart Sales by Category</h4>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h4>2. Bar chart of overall Sales over Time</h4>
+						<br>
+						<P>Breakdown individual bars with stacks for each Sales Person's Sales. Allow for filtering by date range and for selection of Sales Persons.</P>
+					</section>
+
+					<section data-state="loadOverallSalesOverTime">
+						<div style="position: absolute left=0 top=0;vertical-align: text-top; text-align: left;">
+							<select id="lstSalesPerson">
+								<option value="">All</option>
+								<option value="1">Steven Buchanan</option>
+							</select>
+							<button onclick="UpdateReportParameters()">Apply</button>
+							<br>
+							<div id="reportContainer" style="position: relative; background-color: white; text-align: center; vertical-align: text-top;"></div>
+						</div>											
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h4>3. Sales Goals</h4>
+						<br>
+						<P>Sales Goals for each Sales Person on a bar gauge. Allow filtering by Sales Persons.</P>
+					</section>
+
+					<section data-background-iframe="http://localhost/ex4/rdPage.aspx?rdReport=3AGSalesGoalsAndTotalsByEmployee" data-background-interactive>
+						<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h4>3. Sales Goals</h4>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<h4>Discuss</h4>
+					<ol>
+						<li>Northwind database installation</li>
+						<li>Logi Info GEt Started</li>
+						<li>Added table and data for Sales Goals</li>
+						<li>Random managed target for each month per Sales Person</li>
+						<li>Query / View for Sales Goals</li>
+						<li>Make the Bar on Logi Info</li>
+					</ol>
+				</section>
+
+				<section>
+					<h4>Experience</h4>
+					<table>
+						<thead>
+							<tr>
+								<th>Strenght</th>
+								<th>Weakness</th>
+								<th>Opportunities</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					Thank You
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+			function CreateReport() {
+				var options = {
+					applicationUrl : "http://localhost/ex4",
+					report : "2AGSalesDetailsByEmployee",
+					autoSizing : "all",					
+				};
+			var report = EmbeddedReporting.create('reportContainer', options);
+
+			}
+
+			function RemoveReport() {
+   				EmbeddedReporting.remove('reportContainer');
+			}
+
+			function UpdateReportParameters() {
+				var reportObj = EmbeddedReporting.get("reportContainer");
+				var lst = document.getElementById('lstSalesPerson');
+				var sp = lst.options[lst.selectedIndex].value;				
+				reportObj.setParam("rdAfFilterRowNr", sp);
+				reportObj.setParam("rdAnalysisFilterID", "rdAgAnalysisFilter");				
+				reportObj.setParam("rdAfFilterID", "Filter_637320067523670282");								
+				reportObj.loadReport();
+			}
+
+			Reveal.on( 'loadOverallSalesOverTime', function() {
+				CreateReport();
+			} );
+		</script>
+		<script src="http://localhost/ex4/rdTemplate/rdEmbedApi/rdEmbed.js" type="text/Javascript"></script>
+	</body>
+</html>
